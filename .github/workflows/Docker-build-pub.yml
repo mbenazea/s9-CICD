@@ -21,8 +21,8 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -f s9/my-actions/Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/mbenazea/github-actions-app:latest .
+        docker build -f s9/my-actions/Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/github-actions-app:latest .
 
     - name: Push Docker image
       run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/mbenazea/github-actions-app:latest
+        docker push ${{ secrets.DOCKER_USERNAME }}/github-actions-app:latest
