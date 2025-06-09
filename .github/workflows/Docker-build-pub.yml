@@ -24,6 +24,6 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: .
-        file: s9/my-actions/Dockerfile
+        file: my-actions/Dockerfile
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/github-actions-app:1.0
